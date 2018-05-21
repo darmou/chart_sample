@@ -1,0 +1,48 @@
+.ActiveQAs {
+    width: 500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    color: #4d4b4c;
+}
+
+.ActiveQAs .qaItems {
+    width: 370px;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+.ActiveQAs label:before {
+
+    height: 11px;
+    content: "";
+    display: inline-block;
+    width: 13px;
+    margin-right: 5px;
+    background: #5ba5d1;
+}
+
+.ActiveQAs .qaItems div {
+    width: 35px;
+    height: 100px;
+
+}
+
+.ActiveQAs .qaItems .qaItem {
+    background-color: #5ba5d1;
+}
+
+.ActiveQAs .qaItems .qaItemDisabled {
+    background-color: #cfd0d2;
+}

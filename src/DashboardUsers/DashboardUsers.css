@@ -1,0 +1,22 @@
+.DashboardUsers .legend {
+    margin-left: 20px;
+    align-self: flex-end;
+    width: 40%;
+    margin-bottom: 55px;
+}
+
+.DashboardUsers {
+    display: flex;
+}
+
+.DashboardUsers .legend .activeUsers span {
+    color: #69bad5;
+}
+
+.DashboardUsers .legend span {
+    float: right;
+}
+
+.DashboardUsers .legend .inactiveUsers span {
+    color: #fed129;
+}

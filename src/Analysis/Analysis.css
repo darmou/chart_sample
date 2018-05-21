@@ -1,0 +1,16 @@
+.Analysis {
+    width: 500px;
+    display: block;
+}
+
+
+
+.Analysis label {
+    float: left;
+    margin-right: 40px;
+}
+
+.Analysis select {
+    float: left;
+    width: 300px;
+}

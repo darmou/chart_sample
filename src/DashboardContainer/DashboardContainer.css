@@ -1,0 +1,14 @@
+.DashboardContainer {
+    width: 30%;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    box-shadow: -1px 1px 1px 0px rgba(177,175,176,1);
+    padding: 10px 10px 20px 10px;
+}
+
+
+
+.DashboardContainer label {
+    margin-bottom: 20px;
+    display: block;
+}

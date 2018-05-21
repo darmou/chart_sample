@@ -1,0 +1,24 @@
+.MenuButtons .menuButton {
+    background-color: #5ba5d1;
+}
+
+
+.MenuButtons .menuButtonDisabled {
+    background-color: #a6a4a5;
+}
+
+.MenuButtons div {
+    padding: 10px;
+    float: left;
+    margin-right: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.MenuButtons {
+
+    height: 30px;
+    margin-top: 15px;
+}

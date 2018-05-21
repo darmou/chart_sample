@@ -1,0 +1,15 @@
+.DashboardLineChart g.highcharts-legend-item path.highcharts-graph {
+    stroke-width: 0;
+}
+
+.DashboardLineChart g.highcharts-series-0 text {
+    fill: #bc0c1b !important;
+}
+
+.DashboardLineChart g.highcharts-series-1 text {
+    fill: #fe8437 !important;
+}
+
+.DashboardLineChart g.highcharts-series-2 text {
+    fill: #0d5596 !important;
+}
