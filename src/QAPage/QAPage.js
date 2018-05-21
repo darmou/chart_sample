@@ -129,21 +129,25 @@ class QAPage extends Component {
         }
     }
 
+    setDefaultValues() {
+      seriesData.length = 0;
+      seriesData.push([1600], [2100], [1900], [2200], [2100], [1900], [4890], [3800], [3900], [3700], [3900], [3100], [3200]);
+      const activeQAs = this.fillQAs({...this.state.activeQAs});
+      this.setState({activeQAs: activeQAs});
+      let date = moment("10:59:50", "hh:mm:ss");
+      this.addXLabelsSeriesData(date, false);
+    }
+
     componentWillMount() {
         //Just for demo purposes in a a real app this would be from network request or from redux store
-        seriesData.length = 0;
-        seriesData.push([1600], [2100], [1900], [2200], [2100], [1900], [4890], [3800], [3900], [3700], [3900], [3100], [3200]);
-        const activeQAs = this.fillQAs({...this.state.activeQAs});
-        this.setState({activeQAs: activeQAs});
-        let date = moment("10:59:50", "hh:mm:ss");
-        this.addXLabelsSeriesData(date, false);
+        this.setDefaultValues();
     }
 
     analysisOnChange(event) {
         const menuSelected = event.target.value;
         const activeQAs = {...this.state.activeQAs};
 
-        if (menuSelected === "now" || menuSelected === "complete") {
+        if (menuSelected === "now") {
             activeQAs.activeItems.length = 0;
             activeQAs.activeItems.push(0, 2, 7);
             const summaryTable = {...this.state.summaryTable};
@@ -161,6 +165,8 @@ class QAPage extends Component {
             chartData.series[2].data.push(2100, 6450, 4566, 5467, 4700, 8100, 4500, 6100, 4500, 6788, 3500, 2500, 2700);
             this.addXLabelsSeriesData(moment(new Date(), "hh:mm:ss").add("10", "seconds"), true);
             this.setState({ activeQAs: this.fillQAs(activeQAs), summaryTable: summaryTable, dashboardChartData: chartData });
+        } else {
+          this.setDefaultValues();
         }
     }
     
